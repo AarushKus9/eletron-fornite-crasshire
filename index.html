@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crosshair Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            background: rgba(0, 0, 0, 0); /* Fully transparent background */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .crosshair {
+            position: relative;
+            width: 2px;
+            height: 20px; /* Adjust height for a smaller crosshair */
+            background: rgb(255, 255, 255); /* Thin vertical line */
+        }
+
+        .crosshair::before,
+        .crosshair::after {
+            content: '';
+            position: absolute;
+            background: rgb(255, 255, 255); /* Thin horizontal line */
+            width: 20px; /* Adjust width for a smaller crosshair */
+            height: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="crosshair"></div>
+</body>
+</html>

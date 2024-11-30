@@ -1,0 +1,13 @@
+{
+  "name": "crosshair-overlay",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "ps-list": "^10.0.0",
+    "electron": "^22.0.0"
+  }
+}
