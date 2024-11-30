@@ -17,9 +17,11 @@
 
         .crosshair {
             position: relative;
+            top: 15px;
             width: 2px;
-            height: 20px; /* Adjust height for a smaller crosshair */
-            background: rgb(255, 255, 255); /* Thin vertical line */
+            height: 20px; /* Thin vertical line */
+            background: rgb(255, 255, 255);
+            transform: translateY(10px); /* Move 10 pixels down from the center */
         }
 
         .crosshair::before,
@@ -27,7 +29,7 @@
             content: '';
             position: absolute;
             background: rgb(255, 255, 255); /* Thin horizontal line */
-            width: 20px; /* Adjust width for a smaller crosshair */
+            width: 20px; /* Adjust width for the horizontal line */
             height: 2px;
             top: 50%;
             left: 50%;
